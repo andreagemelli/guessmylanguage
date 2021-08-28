@@ -1,0 +1,19 @@
+<mat-toolbar style="background-color: lightgray;">
+    <h1>Guess My Language</h1>
+    <span class="example-spacer"></span>
+    <button mat-raised-button (click)="getDrawings()" style="margin-left: 10px;">
+        <mat-icon>cloud_download</mat-icon>
+        </button>
+    <button mat-raised-button matTooltip="Try to score more points as possibile guessing what the others are drawing! The first that scores 3, wins!">
+    <mat-icon>info</mat-icon>
+    </button>
+</mat-toolbar>
+<div class="main-container">
+
+    <app-gameboard></app-gameboard>
+
+    <app-whiteboard-page></app-whiteboard-page>
+
+    <app-team></app-team>
+
+</div>

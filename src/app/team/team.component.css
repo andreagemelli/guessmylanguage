@@ -1,0 +1,18 @@
+.team-color {
+    background-color: blueviolet;
+    background-size: cover;
+}
+
+.team-card {
+    width: fit-content;
+    display: inline-block;
+    margin: 1% 2% 1% 2%;
+}
+
+.teams {
+    text-align: center;
+}
+
+.mat-title {
+    font-family: 'Rampart One' !important;
+}

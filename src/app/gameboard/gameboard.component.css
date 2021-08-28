@@ -1,0 +1,14 @@
+.gameboard {
+    text-align: center;
+    height: fit-content;
+}
+
+.footer-card {
+    width: fit-content;
+    margin: 1% 2% 1% 2%;
+    display: inline-block;
+}
+
+.field {
+    display: inline-block !important;
+}

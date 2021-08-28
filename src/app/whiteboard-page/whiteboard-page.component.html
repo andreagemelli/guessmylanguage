@@ -1,0 +1,10 @@
+<div class="whiteboard">
+    <div id="container"></div>
+    <div class="row">
+        <button mat-mini-fab [color]='selectedButton["line"] ? "primary":""' (click)='setSelection("line"); addShape("line"); erase = false'><mat-icon>edit</mat-icon></button>
+        <button mat-mini-fab [color]='selectedButton["undo"] ? "primary":""' (click)='clearSelection(); setSelection("undo"); undo()'><mat-icon>undo</mat-icon></button>
+        <!--<button mat-raised-button [color]='selectedButton["erase"] ? "primary":""' (click)='clearSelection(); setSelection("erase"); erase = true'>Erase</button>-->
+        <button mat-mini-fab [color]='selectedButton["clear"] ? "primary":""' (click)='clearBoard()'><mat-icon>clear</mat-icon></button>
+        <button mat-mini-fab (click)='download()'><mat-icon>file_download</mat-icon></button>
+    </div>
+</div>

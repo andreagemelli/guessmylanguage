@@ -1,0 +1,7 @@
+<div class="teams">
+    <mat-card *ngFor="let team of teams" class="team-card" id="{{team.color}}">
+        <p class="mat-title">
+            <b>{{team.name | uppercase}}</b> | Points: {{team.points}}
+        </p>
+    </mat-card>
+</div>

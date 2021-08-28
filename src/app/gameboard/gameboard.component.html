@@ -1,0 +1,34 @@
+<div class="gameboard">
+    <mat-card #round class="footer-card">
+        <p style="font-family: 'Rampart One' !important; font-size: larger; font-weight: bold;">
+            ROUND {{round_number}}
+        </p> {{active_team.name}} is {{round_phase}}
+
+    </mat-card>
+    <div *ngIf="isDrawing(); else isGuessing" class="footer-card">
+        <mat-card style="padding-bottom: 0px;">
+            <mat-form-field class="field" appearance="outline" style="margin-left: 10px;">
+                <mat-label>Word</mat-label>
+                <input matInput required [(ngModel)]="data.word" placeholder="What you drew..">
+            </mat-form-field>
+            <mat-form-field class="field" appearance="outline" style="margin-left: 10px;">
+                <mat-label>Language</mat-label>
+                <input matInput required [(ngModel)]="data.country">
+            </mat-form-field>
+            <button mat-button color="primary" style="margin-left: 10px;" (click)="submit()">Submit</button>
+        </mat-card>
+    </div>
+    <ng-template #isGuessing>
+        <mat-card class="footer-card" style="padding-bottom: 0px;">
+            <mat-form-field class="field" appearance="outline" style="margin-left: 10px;">
+                <mat-label>Word</mat-label>
+                <input matInput [(ngModel)]="guess.word" placeholder="What you drew..">
+            </mat-form-field>
+            <mat-form-field class="field" appearance="outline" style="margin-left: 10px;">
+                <mat-label>Language</mat-label>
+                <input matInput [(ngModel)]="guess.country">
+            </mat-form-field>
+            <button mat-button color="primary" style="margin-left: 10px;" (click)="close_round()">Guess</button>
+        </mat-card>
+    </ng-template>
+</div>

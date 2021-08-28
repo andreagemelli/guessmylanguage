@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+#teams {
+    height: 50%;
+}
+
+.main-container {
+    background-color: #fafafa;
+}
+
+.game {
+    text-align: center;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-raised-button {
+    background-color: transparent;
+}
+
+h1 {
+    font-family: 'Rampart One' !important;
+    font-size: 30px !important;
+    color: black;
+    font-weight: bold;
+}
